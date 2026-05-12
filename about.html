@@ -229,11 +229,13 @@ border-radius: 2px;
 
    .nav-links{
     display: flex;
-    flex-wrap: wrap;   /* ✅ allows items to go next line */
+    flex-wrap: wrap;       /* ✅ allows items to go next line */
     justify-content: center;
     gap: 10px;
-    padding: 10px 0;
-    margin: 0;
+
+    padding: 0;          /* ✅ remove extra space */
+    margin-top: -30px;   /* ✅ move upward */
+    margin-bottom: 0;
 }
     .nav-links li{
         list-style: none;
