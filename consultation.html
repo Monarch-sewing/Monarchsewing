@@ -135,7 +135,6 @@ background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 
 </div>
 <script>
 function sendToWhatsApp(event) {
-
     event.preventDefault();
 
     let name = document.getElementById("name").value;
@@ -144,10 +143,9 @@ function sendToWhatsApp(event) {
     let date = document.getElementById("date").value;
     let notes = document.getElementById("notes").value;
 
-    let phoneNumber = "916309241716"; 
+    let phoneNumber = "916309241716"; // your WhatsApp number
 
-    let message =
-Hello Monarch Sewing,
+    let message = `Hello Monarch Sewing,
 
 I would like to book a consultation.
 
@@ -159,12 +157,12 @@ Preferred Date: ${date}
 Project Details:
 ${notes}`;
 
-    let whatsappURL =
-`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappURL, "_blank");
 }
 </script>
+    
 
 </body>
 </html>
