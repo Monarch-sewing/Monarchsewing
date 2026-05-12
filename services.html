@@ -255,9 +255,8 @@
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    align-items: stretch;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
 }
 
 
@@ -376,22 +375,14 @@
         display: block;
     }
 }
-@media (max-width: 1024px) {
-    .gallery-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.gallery-item {
+    min-width: 0;
 }
 
-@media (max-width: 768px) {
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
+.gallery-img-container img {
+    width: 100%;
+    height: 150px;   /* control size so it doesn't become too big */
+    object-fit: cover;
 }
     </style>
 </head>
