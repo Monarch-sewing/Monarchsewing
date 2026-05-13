@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Signature Collection | Monarch Sewing</title>
+    
+    <style>
+        /* --- General Styles --- */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        /* --- Navigation --- */
+        header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover, .active {
+            color: #d8a4a4; /* Soft blush tone */
+        }
+
+        /* --- Collection Hero --- */
+        .collection-hero {
+            background-color: #fff0f0; /* Blush background */
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .collection-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        /* --- Product Grid --- */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 60px 0;
+        }
+
+        .product-card {
+            background: #fff;
+            text-align: center;
+        }
+
+        .product-image {
+            background-color: #f9f9f9;
+            height: 400px; /* Space for your garment photo */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            border: 1px solid #f2f2f2;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+
+        .product-info h3 {
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .price-tag {
+            display: block;
+            margin: 15px 0;
+            font-size: 0.85rem;
+            color: #888;
+            letter-spacing: 1px;
+        }
+
+        .btn-inquire {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 1px solid #333;
+            color: #333;
+            text-decoration: none;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+
+        .btn-inquire:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            background: #fff;
+            border-top: 1px solid #f0f0f0;
+            font-size: 0.8rem;
+        }
+
+        footer a {
+            color: #888;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Monarch Sewing</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="signaturecollection.html" class="active">Signature Collection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="collection-hero">
+        <div class="container">
+            <h1>The Signature Collection</h1>
+            <p>Thoughtfully crafted garments, designed for your silhouette.Whether you are crafting a breathable summer dress or a structured heirloom piece, our curated selection of cotton and rayon blends offers the perfect canvas for your next project. Here is a guide to the various cotton types currently available for purchase.</p>
+        </div>
+    </section>
+
+<p><strong>Note on Purchasing:</strong> All fabrics are sold by the yard. We recommend pre-washing your cotton selections to account for natural shrinkage before you begin your bespoke tailoring process.</p>
+    <main class="container">
+        <div class="product-grid">
+            
+            <!-- Item 1 -->
+            <div class="product-card">
+                <div class="product-image"  style="background-image: url('cotton1.jpg');">
+
+                               </div>
+                <div class="product-info">
+                    <h3>Bespoke Cotton Tunic</h3>
+                    <p> It is highly absorbent, durable, Breathable, and versatile, commonly used in clothing and home textiles.</p>
+                    <span class="price-tag">Investment + Profit Pricing</span>
+                    <a href="consultation.html" class="btn-inquire">Inquire</a>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('rayon2.jpg');">
+
+                          </div>
+                <div class="product-info">
+                    <h3>Vesco/Rayon</h3>
+                    <p>its exceptional softness, high moisture absorption, and excellent, fluid drape, it is a comfortable, breathable, and affordable choice for apparel.</p>
+                    <span class="price-tag">Investment + Profit Pricing</span>
+                    <a href="consultstion.html" class="btn-inquire">Inquire</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <p><b> _______  Explore our exclusive collection of premium fabrics and contact us today to find the perfect material for your custom design. _______</p>
+    <footer>
+        <p>&copy; 2025 Monarch Sewing.</p>
+        <p><a href="policies.html">Shipping & Delivery Policy for Stitched Items</a></p>
+    </footer>
+
+</body>
+</html>
