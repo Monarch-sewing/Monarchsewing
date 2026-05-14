@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blouse Gallery | Monarch Sewing</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+/* Header for the specific category page */
+.detail-header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fffaf0; /* Light blush/cream background */
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #d19a9a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* The larger grid for many images */
+.full-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 350px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Hover Effect: Text appears over the image */
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(209, 154, 154, 0.8); /* Blush pink transparent */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .img-overlay {
+    opacity: 1;
+}
+</style></head>
+<body>
+
+    <section class="detail-header">
+        <h1>Blouse Collection</h1>
+        <p>A complete look at our Monarch blouse designs and custom fittings.</p>
+        <a href="gallery.html" class="back-link">← Back to All Categories</a>
+    </section>
+
+    <!-- Full Image Grid -->
+    <div class="full-gallery-grid">
+        <div class="gallery-item">
+            <img src="gallery/blouse1.jpg" alt="Blouse Design 1">
+            <div class="img-overlay">Custom Velvet Blouse</div>
+        </div>
+        <div class="gallery-item">
+            <img src="gallery/blouse2.jpg" alt="Blouse Design 2">
+            <div class="img-overlay">Seamless Blouse</div>
+        </div>
+        <div class="gallery-item">
+            <img src="gallery/blouse3.jpg" alt="Blouse Design 3">
+            <div class="img-overlay">Keyholw Neck Design</div>
+        </div>
+ <div class="gallery-item">
+            <img src="gallery/blouse4.jpg" alt="Blouse Design 4">
+            <div class="img-overlay">Boat Neck Design</div>
+        </div>
+    </div>
+<footer style="text-align: center; padding-bottom: 40px; color: #666; font-size: 0.9rem;"> 
+     &copy; 2025 Monarch sewing | Designed by Monika Lewinsky.
+     </footer>
+</body>
+</html>
